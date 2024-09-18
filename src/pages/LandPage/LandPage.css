@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Paytone One';
+  src: url('/fonts/Paytone_One/PaytoneOne-Regular.ttf') format('truetype');
+}
+/* Main container setup */
+.land_page {
+  position: relative;
+  background-color: #F0F2F5;
+  min-height: 100vh; /* Cover the full viewport height */
+  display: flex;.land_page {
+  position: relative;
+  background-color: #F0F2F5;
+  min-height: 100vh; /* Cover the full viewport height */
+  display: flex;
+  padding-top: 60px; /* Adjust to navbar height */
+  padding-left: 5%; /* Added padding to push content to the right */
+  color: #000000;
+}
+  padding-top: 60px; /* Adjust to navbar height */
+  padding-left: 5%; /* Added padding to push content to the right */
+  color: #000000;
+}
+/* Toon image positioning */
+.pictures {
+  flex: 0 1 35%; /* Adjust the flex basis and allow shrinking if necessary */
+  position: relative; /* Relative positioning for absolute children */
+  align-items: flex-start; /* Align toon to the top */
+}
+.toon {
+  max-width: 100%; /* Full width of its parent */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Absolute positioning within .pictures */
+  bottom: 0; /* Align toon to the bottom of .pictures */
+}
+  .land_page_info::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #FFD700; /* Yellow color */
+    border-radius: 50%;
+    top: 10px;
+    left: -20px;
+    z-index: 2;
+  }
+  /* Style for the text */
+  .land_page_info {
+    flex: 0 0 20%; /* Flex basis of 20%, not growing or shrinking */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the text inside this div */
+    gap: 0.4rem;
+    position: relative;
+    z-index: 1;
+  }
+  .land_page_info::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    background-color: #0000FF; /* Blue color */
+    top: 30px;
+    left: -35px;
+    z-index: 2;
+  }
+  .land-page-red {
+    color: rgb(204, 11, 11); /* Red color */
+    margin: 0; /* Remove margin to tighten the gap */
+    font-size: 2.5rem; /* Increase font size */
+    line-height: 1;
+    margin-top: 0.2rem; /* Reduced top margin */
+    margin-bottom: 0.2rem;
+}
+.land_page_blue {
+    color: rgb(4, 4, 71); /* Blue color */
+    font-style: italic; /* Make text italic */
+    margin: 0; /* Remove margin to tighten the gap */
+    font-size: 3rem; /* Larger font size */
+    letter-spacing: 0.1rem; /* Add some letter spacing */
+    line-height: 1;
+    margin-top: 0.2rem; /* Reduced top margin */
+    margin-bottom: 0.2rem;
+}
+.land-page-red-innovative {
+    color: rgb(204, 11, 11); /* Red color */
+    margin: 0; /* Remove margin to tighten the gap */
+    font-size: 2.5rem; /* Same size as "Be Connected" */
+    line-height: 1;
+    margin-top: 0.2rem; /* Reduced top margin */
+    margin-bottom: 0.2rem;
+}
+  /* ... existing .land-page-red and .land_page_blue styles ... */
+  /* Triangle container for the African print */
+  .triangle-container {
+    position: absolute;
+    top: 60px; /* Adjust this value to the height of your navbar */
+    right: 0;
+    width: 60%; /* Increase the width for a larger triangle */
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* African print with the triangular shape */
+  .african-print {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('path-to-your-african-print-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(100% 0, 100% 100%, 30% 100%); /* Adjust for the larger triangle */
+  }
+  /* Pseudo-element for the yellow border */
+  .african-print::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-left: 10px solid yellow; /* Creates the yellow border */
+    clip-path: polygon(100% 0, 100% 100%, 30% 100%);
+  }
+  .decorative-shape-1 {
+    position: absolute;
+    top: 20%; /* Position according to your design */
+    right: 10%; /* Position according to your design */
+    width: 25px;
+    height: 25px;
+    background-color: #FF0000; /* Example color */
+    z-index: 2;
+  }
+  /* Responsive design adjustments */
+  @media screen and (min-width: 800px) {
+    .land_page {
+      justify-content: flex-start; /* Align children to the start on larger screens */
+    }
+    .toon {
+      width: auto;
+      height: 90%; /* Increase the size of the toon on larger screens */
+    }
+    .land_page_info {
+      margin-left: 5%; /* Add some margin to the left of the text */
+    }
+    /* Adjust the triangle for larger screens if needed */
+    .african-print {
+      clip-path: polygon(100% 0, 100% 100%, 25% 100%); /* Larger triangle on wider screens */
+    }
+    .land_page_info::before {
+        top: 15px;
+        left: -25px;
+      }
+      .land_page_info::after {
+        top: 50px;
+        left: -45px;
+      }
+      .decorative-shape-1 {
+        top: 25%; /* Adjust for larger screens */
+        right: 15%; /* Adjust for larger screens */
+      }
+  .triangles-at-feet {
+    bottom: 10%; /* Adjust as needed for larger screens */
+    left: 12%; /* Adjust as needed for larger screens */
+    width: 10%; /* Adjust as needed for larger screens */
+  }
+  }

@@ -1,0 +1,58 @@
+/* Replace 'your-african-tech-bg.jpg' with your actual image path */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 94.8%;  /* Added width for consistency */
+  background-image: url('/src/assets/Picture6.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px; /* Adjust padding for smaller screens if needed */
+  color: #fff;
+}
+
+/* Option 1: Equal width using Flexbox */
+.textContainer,
+.imageContainer {
+  flex-basis: 1fr;  /* Makes them share available space equally */
+  text-align: center; /* for imageContainer */
+}
+
+/* Option 2: Specific width using percentages (remove flex-basis above) */
+/*.textContainer,
+.imageContainer {
+  width: 50%;  /* Adjust percentage for desired width distribution */
+
+
+.techFont {
+  /* Choose your preferred tech font here! */
+  font-family: 'Source Code Pro', monospace; /* Example tech font */
+  font-size: 4.5em; /* Adjust font size for mobile responsiveness */
+  margin-bottom: 20px;
+}
+.techFont_info{
+   font-family: "Madimi One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.paragraph {
+  font-size: 4.2em;
+  line-height: 1.5;
+  
+}
+
+.image {
+  width: 100%;
+}
+
+/* Media Queries for additional responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .techFont {
+    font-size: 3em; /* Adjust font size for smaller screens */
+  }
+}

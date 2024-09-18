@@ -1,0 +1,107 @@
+.container{
+    width: 100%;
+    margin: -50px auto;
+    max-width: 1600px;
+  background-color: #eff1f3;
+
+
+    
+    h1{
+        text-align: center;
+        margin: 30px 0;
+        color: #4a4ac7;
+    }
+   
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    margin-bottom: 2rem;
+   
+    padding: 1rem;
+    
+}
+
+
+   .name {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  gap: 3rem;
+}
+
+
+
+.email,.lastName,.firstName{
+    width: 100%;
+    border-radius: .5rem;
+     padding: .5rem;
+    font-style: italic;
+   border: none;
+    outline:none;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    margin-top: .5rem;
+    padding-left: .8rem;
+  
+
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: -0.9rem;
+  
+}
+
+.label{
+  font-weight: 600;
+  font-family: "Modern Antiqua", serif;
+
+  font-style: normal;
+}
+.message{
+    width: 80%;
+    margin: 0 35px;
+    height: 100px;
+    padding: 15px;
+    font-style: italic;
+    border: none;
+    color: #434753;
+   outline: none;
+   resize: none;
+   border-radius: 1rem;
+   margin-top: 1rem;
+   max-width: 1300px;
+}
+
+.send{
+    width: 100px;
+    margin: 30px 35px;
+    height: 40px;
+    border: none;
+    background: orange;
+    color: #f6f4f2;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+.send:hover{
+    background-color: rgb(153, 121, 62);
+}
+.label_last{
+   width: 100%;
+}
+
+@media(min-width:720px){
+  .message{
+    width: 50%;
+  }
+ 
+}
+@media screen and (max-width: 768px) {
+  .name {
+    grid-template-columns: 1fr;
+  }
+}

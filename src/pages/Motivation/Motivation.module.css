@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 94.8%;
+  margin: 50px auto;
+  background-image: url("/src/assets/picture2.png"); /* Added background image */
+  background-size: cover; /* Resize image to cover the container */
+  background-position: center; /* Center the image */
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff; /* Text color adjusted for light background */
+}
+
+.videoContainer {
+  flex: 1;
+  /* Adjust width as needed (consider aspect ratio) */
+}
+
+.textContainer {
+  flex: 1;
+}
+
+.paragraph {
+  font-size: 22px; /* Changed font size to 12px */
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #000000; 
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 2em; /* Consider adjusting quote size for readability */
+  margin-top: 0;
+  text-align: right; /* Align quote to the right side */
+  color: #000000; /* Lighter text for the quote */
+}
+
+/* Optional: Media Queries for responsiveness (adjust as needed) */
+@media (max-width: 750px) {
+  .container {
+    flex-direction: column; /* Stack video and text on smaller screens */
+    margin: 30px auto; /* Adjust margin for smaller viewports */
+  }
+
+  .videoContainer,
+  .textContainer {
+    flex: 1 0 auto; /* Allow elements to grow/shrink proportionally */
+  }
+}
+
+/* Tech font suggestion */
+body {
+  font-family: "Fira Code", monospace; /* Replace with your preferred font */
+}

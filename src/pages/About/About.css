@@ -1,0 +1,129 @@
+.video_bg{
+     position: relative;
+    height: 60%;
+     margin-top: -2rem;
+}
+.video_bg>video{
+    object-fit: cover;
+    width: 100%;
+    height: 60vh;
+}
+ .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(8, 1, 1, 0.5);
+  }
+    .info_video {
+    position: absolute;
+  top: 15rem;
+    left: 0;
+    width: 40%;
+    padding-left: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+   
+  }
+  .info_header{
+color: darkgoldenrod;
+margin-top: -6rem;
+font-weight: bolder;
+font-family: "Calistoga", serif;
+
+  font-style: normal;
+
+
+  }
+     
+.info_page{
+    font-size:7rem;
+    padding: 1.5rem;
+   
+    font-family: "Madimi One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+   
+  }
+  @media(max-width:843px){
+    .info_video{
+   top: 9rem;
+     }
+.info_page{
+  font-size: x-small;
+  font-weight: bold;
+}
+  }
+    @media(max-width:907px){
+ .info_page{
+ 
+      font-size: xx-small;
+    
+   
+    }
+      .info_header{
+        margin-bottom:0.1px;
+      }
+    }
+  @media(max-width:1350px){
+    .video_bg>video{
+    object-fit: cover;
+    width: 100%;
+    height: fit-content;
+}
+.overlay{
+  height: 100%;
+}
+.info_page{
+    
+     font-size: large;
+  }
+
+  }
+     @media (min-width:280px) {
+    .info_page{
+ 
+     font-size: 7px;
+  }
+    .info_header{
+        margin-bottom:-3rem;
+        font-size: medium;
+      }
+  }
+  @media (min-width:360px) {
+    .info_page{
+ 
+     font-size: xx-small;
+  }}
+ 
+    @media (min-width:540px) {
+    .info_page{
+ 
+     font-size: small;
+  }
+  .info_header{
+        margin-bottom:0.1px;
+      }
+  
+  }
+    @media (min-width:600px) {
+    .info_page{
+ 
+     font-size: medium;
+  }
+    }
+  @media (min-width:800px) {
+    .info_page{
+      line-height: 40px;
+      font-size: xx-large;
+    }
+    .info_header{
+        font-size: xx-large;
+      }
+  }
